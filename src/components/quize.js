@@ -1,33 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavMenu from './Nav'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function Quize() {
-  const questionsData=[
-    {
-      "id": 1,
-      "question": "What is 2 + 2?",
-      "options": [
-        { "id": 1, "text": "2" },
-        { "id": 2, "text": "3" },
-        { "id": 3, "text": "4", "isCorrect": true },
-        { "id": 4, "text": "5" }
-      ]
-    },
-    {
-      "id": 2,
-      "question": "What is the capital of France?",
-      "options": [
-        { "id": 1, "text": "London" },
-        { "id": 2, "text": "Paris", "isCorrect": true },
-        { "id": 3, "text": "Berlin" },
-        { "id": 4, "text": "Madrid" }
-      ]
-    }
-  ];  
+
+  const [questionsData, setQuestionsData] = useState([]);
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState([]);
+
+  useEffect(() => {
+    const fetchQuestions = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/api/questions'); // Update the endpoint
+        setQuestionsData(response.data);
+      } catch (error) {
+        console.error('Error fetching questions:', error);
+      }
+    };
+
+    fetchQuestions();
+  }, []);
+
+  // const questionsData=[
+    
+  // ];  
+  // const [currentStep, setCurrentStep] = useState(0);
+  // const [answers, setAnswers] = useState([]);
 
   const handleNextStep = () => {
     setCurrentStep(currentStep + 1);
@@ -42,6 +42,9 @@ function Quize() {
     setAnswers([...answers, { questionId, optionId }]);
     handleNextStep();
   };
+
+
+
   console.log("answers:",answers);
   return (
     
