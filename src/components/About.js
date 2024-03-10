@@ -7,12 +7,19 @@ function About() {
     <Container>
       <NavMenu/>
       <h1>About</h1>
+      {/* <img src="/images/abt1.png" alt=""></img> */}
+      <center>
+      <img src="/images/abt1.png" alt="abt1img" />
+      </center>
       <p>
       Our project is dedicated to transforming the landscape of mental health support by combining innovative technology with proven psychological techniques. At the core of our endeavor is the use of cutting-edge Retrieval Augmented Generation (RAG) technology to deliver personalized Virtual Reality (VR) experiences tailored to individual needs.
       </p>
       <p>
       Our platform is designed to offer two primary features: "Self-care," providing tools for managing general stress and promoting overall well-being, and "Treatment companion," offering support for more severe conditions such as phobias, trauma, and PTSD.
       </p>
+      <center>
+      <img src="/images/abt2.png" alt="abt1img" />
+      </center>
       <p>
       We believe in the power of technology to enhance mental health care, which is why we have developed robust voice analysis algorithms, sophisticated RAG models, seamless integration frameworks, and user-friendly interfaces. These elements work together to create a comprehensive and user-centric approach to mental health support.
       </p>
@@ -29,7 +36,7 @@ function About() {
 export default About
 
 const Container =styled.main`
-height:100vh;
+height:200vh;
 width:100vw;
 overflow:hidden;
 // min-height : calc(100vh - 70px);
@@ -44,7 +51,7 @@ position:relative;
     background-position: end; 
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
   content : "";
   position:absolute;
   top:0;
@@ -61,5 +68,4 @@ p{
   line-height: 1.5;
   text-align: center;
 }
-
 `
