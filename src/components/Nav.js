@@ -10,23 +10,23 @@ function Header() {
         <Logo><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>MIND WAVE VR</Link></Logo>
         <NavMenu>
             <a>
-                <img src="/images/home-icon.svg" alt=""></img>
+                {/* <img src="/images/home-icon.svg" alt=""></img> */}
                 <Link to="/home" style={{ textDecoration: 'none', color: 'inherit' }}><span>HOME</span></Link>
             </a>
             <a>
-                <img src="/images/search-icon.svg" alt=""></img>
-                <Link to="/home" style={{ textDecoration: 'none', color: 'inherit' }}><span>SEARCH</span></Link>
+                {/* <img src="/images/search-icon.svg" alt=""></img> */}
+                <Link to="/home" style={{ textDecoration: 'none', color: 'inherit' }}><span>PHOBIA</span></Link>
             </a>
             <a>
-                <img src="/images/watchlist-icon.svg" alt=""></img>
+                {/* <img src="/images/watchlist-icon.svg" alt=""></img> */}
                 <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}><span>ABOUT</span></Link>
             </a>
             <a>
-                <img src="/images/original-icon.svg" alt=""></img>
+                {/* <img src="/images/original-icon.svg" alt=""></img> */}
                 <Link to="/pricing" style={{ textDecoration: 'none', color: 'inherit' }}><span>PRICING</span></Link>
             </a>
             <a>
-                <img src="/images/movie-icon.svg" alt=""></img>
+                {/* <img src="/images/movie-icon.svg" alt=""></img> */}
                 <Link to="/signin" style={{ textDecoration: 'none', color: 'inherit' }}><span>SIGNIN</span></Link>
             </a>
             
@@ -59,6 +59,7 @@ const Nav = styled.nav`
     }
     .user{
         margin:0 10px;
+        font-family: Alatsi;
     }
 `
 const Logo = styled.div`
@@ -83,7 +84,7 @@ position:relative;
 float:right;
 
 a{
-    
+    font-family: Alatsi;
     display:flex;
     align-items:center;
     padding:0 12px;

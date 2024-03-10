@@ -47,7 +47,7 @@ function Quize() {
     
     <Container>
       <NavMenu/>
-      <h1>Help us to understand YOU...</h1>
+      <h1>Help us to understand your MENTAL STATUS...</h1>
       <div className='quize-question'>
       {currentStep < questionsData.length ? (
         <>
@@ -81,6 +81,8 @@ export default Quize
 const Container =styled.main`
 height:100vh;
 width:100vw;
+font-family: "Fira Mono";
+font-weight:light;
 overflow:hidden;
 // min-height : calc(100vh - 70px);
 // padding:0 calc(3.5vw + 5px);
@@ -106,11 +108,14 @@ position:relative;
   display:flex;
   flex-direction:column;
   align-items:center;
+  
 }
 .question-txt{
   color:#203F29;
 }
 .answers-txt{
+  font-family: "Fira Mono";
+  font-weight:light;
   color:#203f39;
   background-color: transparent;
   border: none;
