@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavMenu from './Nav'
+import SignupForm from './signIn_Sree'
 
 function Signin() {
   return (
     <Container>
       <NavMenu/>
-      <h1>Signin</h1>
+    <SignupForm/>
     </Container>
   )
 }
