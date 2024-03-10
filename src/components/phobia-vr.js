@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavMenu from './Nav'
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ProductBlock = (props) => {
@@ -8,34 +10,44 @@ const ProductBlock = (props) => {
       <Link to={`/phobia-vr/${props.p}`}>
       <div className="product-block">
         <img src={props.img} alt="phobiaimg" />
-        <div className="overlay"><h4 className='head'>{props.p}</h4>
-        <p className='para'>{props.dis}</p></div>
+        <div className="overlay"><h4 className='head'>{props.p}</h4></div>
       </div>
       </Link>
     );
   };
-function phobia() {
+function Phobiavr() {
+    const { id } = useParams();
+    const [progress, setProgress] = useState(0);
+
+    const updateProgress = () => {
+      const newProgress = progress < 100 ? progress + 25 : 0;
+      setProgress(newProgress);
+    };
+    const i="https://via.placeholder.com/500";
   return (
     <Container>
       <NavMenu/>
-      <h1>Phobia</h1>
-      <div className="container1">
-      <ProductBlock img="/images/hydro.jpg" p="Hydrophobia" dis="Fear of water, which can manifest as a fear of drowning, large bodies of water, or even fear of water in general."/>
-      <ProductBlock img="/images/small.jpg" p="Claustrophobia" dis="Fear of enclosed or small spaces, leading to feelings of panic or suffocation."/>
-      <ProductBlock img="/images/height.jpg" p="Acrophobia" dis="Fear of heights, characterized by anxiety in tall places like high buildings or mountains."/>
-      <ProductBlock img="/images/light.jpg" p="Astraphobia" dis="Fear of thunder and lightning, which can cause anxiety during storms."/>
-      <ProductBlock img="/images/dog.jpeg" p="Cynophobia" dis="Fear of dogs, which can stem from a traumatic experience or general anxiety about their behavior."/>
-      <ProductBlock img="/images/public.jpg" p="Social Phobia " dis="Fear of social situations, causing self-consciousness and avoidance of social interactions."/>
-
+      <h1>{id}</h1>
+      <div>
+      <ProgressBarContainer>
+        <Progress color="#6ab04c" width={progress}>{progress}%</Progress>
+      </ProgressBarContainer>
+      <button onClick={updateProgress}>Update Progress</button>
+    </div>
+    <div className="container1">
+    <ProductBlock img={i} p="Stage 1"/>
+    <ProductBlock img={i} p="Stage 2"/>
+    <ProductBlock img={i} p="Stage 3"/>
+    <ProductBlock img={i} p="Stage 4"/>
     </div>
     </Container>
   )
 }
 
-export default phobia
+export default Phobiavr
 
 const Container =styled.main`
-height:110vh;
+height:100vh;
 width:100vw;
 overflow:hidden;
 // min-height : calc(100vh - 70px);
@@ -49,7 +61,7 @@ position:relative;
     background-position: end; 
     background-repeat: no-repeat;
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
   content : "";
   position:absolute;
   top:0;
@@ -102,4 +114,17 @@ position:relative;
     font-size:12px;
   }
 
-`
+`;
+const ProgressBarContainer = styled.div`
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+`;
+
+const Progress = styled.div`
+  height: 20px;
+  border-radius: 4px;
+  background-color: ${props => props.color};
+  width: ${props => props.width}%;
+  transition: width 0.5s ease-in-out;
+`;

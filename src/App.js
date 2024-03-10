@@ -147,6 +147,7 @@ import Pricing from './components/Pricing';
 import About from './components/About';
 import Quize from './components/quize'
 import Phobia from './components/phobia'
+import Phobiavr from './components/phobia-vr';
 //import { Route,Routes,link} from 
 
 function App() {
@@ -162,6 +163,7 @@ function App() {
         <Route path="/signin" element = {<Signin/>}></Route>
         <Route path="/quize" element = {<Quize/>}></Route>
         <Route path="/phobia" element = {<Phobia/>}></Route>
+        <Route path="/phobia-vr/:id" element = {<Phobiavr/>}></Route>
         {/* <Route path="/login" element = {<Login/>}></Route> */}
 
       </Routes>
