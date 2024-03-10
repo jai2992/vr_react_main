@@ -42,12 +42,12 @@ function Quize() {
     setAnswers([...answers, { questionId, optionId }]);
     handleNextStep();
   };
-
+  console.log("answers:",answers);
   return (
     
     <Container>
       <NavMenu/>
-      <h1>quize</h1>
+      <h1>Help us to understand YOU...</h1>
       <div className='quize-question'>
       {currentStep < questionsData.length ? (
         <>
@@ -68,7 +68,7 @@ function Quize() {
       ) : (
         <div>
           <h2>Quiz Complete!</h2>
-          <pre>{JSON.stringify(answers, null, 2)}</pre>
+          {/* <pre>{JSON.stringify(answers, null, 2)}</pre> */}
         </div>
       )}
     </div>
