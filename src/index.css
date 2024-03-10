@@ -13,10 +13,10 @@ code {
 }
 @font-face {
   font-family: 'Alatsi';
-  src: url('C:/Users/Darkside-PC/Desktop/Code-Practice/Javascript/project/public/Alatsi-Regular.ttf') format('truetype');
+  src: url('/public/Alatsi-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Fira Mono';
-  src: url('C:/Users/Darkside-PC/Desktop/Code-Practice/Javascript/project/public/FiraMono-Medium.ttf') format('truetype');
+  src: url('/public/FiraMono-Medium.ttf') format('truetype');
 }

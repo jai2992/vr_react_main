@@ -145,7 +145,7 @@ import Landing from './components/Landing';
 import Signin from './components/Signin';
 import Pricing from './components/Pricing';
 import About from './components/About';
-
+import Quize from './components/quize'
 //import { Route,Routes,link} from 
 
 function App() {
@@ -159,6 +159,7 @@ function App() {
         <Route path="/about" element = {<About/>}></Route>
         <Route path="/pricing" element = {<Pricing/>}></Route>
         <Route path="/signin" element = {<Signin/>}></Route>
+        <Route path="/quize" element = {<Quize/>}></Route>
         {/* <Route path="/login" element = {<Login/>}></Route> */}
 
       </Routes>

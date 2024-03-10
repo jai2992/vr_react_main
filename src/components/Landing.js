@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import '../index.css'
 import NavMenu from './Nav'
+import { Link } from 'react-router-dom';
 
 function Landing() {
   return (
@@ -13,7 +14,9 @@ function Landing() {
                 <h1>Mind Wave VR</h1>
                 <div class="sub">Personalized VR Therapy</div>
                 <Button>
-                    <button class="b1">MINDCHECK</button>
+                    <Link to="/quize" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <button className="b1">MINDCHECK</button>
+                    </Link>
                     <button class="b2">VR OASIS</button>
                 </Button> 
             </div> 
