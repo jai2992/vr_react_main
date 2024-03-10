@@ -15,7 +15,7 @@ function Header() {
             </a>
             <a>
                 {/* <img src="/images/search-icon.svg" alt=""></img> */}
-                <Link to="/home" style={{ textDecoration: 'none', color: 'inherit' }}><span>PHOBIA</span></Link>
+                <Link to="/phobia" style={{ textDecoration: 'none', color: 'inherit' }}><span>PHOBIA</span></Link>
             </a>
             <a>
                 {/* <img src="/images/watchlist-icon.svg" alt=""></img> */}
