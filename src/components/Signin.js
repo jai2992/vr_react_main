@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavMenu from './Nav'
-import SignupForm from './signIn_Sree'
 
 function Signin() {
   return (
     <Container>
       <NavMenu/>
-    <SignupForm/>
+    {/* <SignupForm/> */}
     </Container>
   )
 }
