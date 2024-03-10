@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { NavLink , Link} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 
 function Header() {
@@ -23,7 +23,7 @@ function Header() {
             </a>
             <a>
                 {/* <img src="/images/original-icon.svg" alt=""></img> */}
-                <Link to="https://kingof64sqrs.github.io/final-vr/" style={{ textDecoration: 'none', color: 'inherit' }}><span>PRICING</span></Link>
+                <Link to="https://kingof64sqrs.github.io/final-vr/" style={{ textDecoration: 'none', color: 'inherit' }}><span>DEMO VR</span></Link>
             </a>
             <a>
                 {/* <img src="/images/movie-icon.svg" alt=""></img> */}

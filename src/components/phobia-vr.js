@@ -7,12 +7,10 @@ import { Link } from 'react-router-dom';
 
 const ProductBlock = (props) => {
     return (
-      <Link to={`/phobia-vr/${props.p}`}>
       <div className="product-block">
         <img src={props.img} alt="phobiaimg" />
         <div className="overlay"><h4 className='head'>{props.p}</h4></div>
       </div>
-      </Link>
     );
   };
 function Phobiavr() {
@@ -32,14 +30,15 @@ function Phobiavr() {
       <ProgressBarContainer>
         <Progress color="#6ab04c" width={progress}>{progress}%</Progress>
       </ProgressBarContainer>
-      <button onClick={updateProgress}>Update Progress</button>
     </div>
+    <button onClick={updateProgress}>
     <div className="container1">
     <ProductBlock img={i} p="Stage 1"/>
     <ProductBlock img={i} p="Stage 2"/>
     <ProductBlock img={i} p="Stage 3"/>
     <ProductBlock img={i} p="Stage 4"/>
     </div>
+    </button>
     </Container>
   )
 }
@@ -47,7 +46,7 @@ function Phobiavr() {
 export default Phobiavr
 
 const Container =styled.main`
-height:100vh;
+height:110vh;
 width:100vw;
 overflow:hidden;
 // min-height : calc(100vh - 70px);
@@ -61,7 +60,7 @@ position:relative;
     background-position: end; 
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
   content : "";
   position:absolute;
   top:0;
@@ -112,6 +111,10 @@ position:relative;
   }
   .para{
     font-size:12px;
+  }
+  button
+  {
+    background-color: transparent;
   }
 
 `;
