@@ -33,7 +33,7 @@ function Header() {
             
         </NavMenu>
         <div>
-            <UserImg src="/images/logo.svg"/>
+            <UserImg src="/images/user.png"/>
             <div class="user">USER</div>
         </div>
         
