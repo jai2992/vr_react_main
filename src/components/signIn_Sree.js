@@ -46,7 +46,7 @@ const SignupForm = () => {
   
       // Handle successful signup/signin response (e.g., redirect to dashboard)
       console.log(`${isSignUp ? 'Signup' : 'Signin'} successful:`, response.data);
-      window.location.href = '/a';
+      window.location.href = '/app';
       // Clear the form data
       setFormData({
         firstName: '',

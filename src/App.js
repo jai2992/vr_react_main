@@ -158,7 +158,7 @@ function App() {
       <Routes>
         <Route path="" element = {<Landingb/>}></Route>
         <Route path="/" element = {<Landingb/>}></Route>
-        <Route path="/a" element = {<Landing/>}></Route>
+        <Route path="/app" element = {<Landing/>}></Route>
         <Route path="/home" element = {<Home/>}></Route>
         <Route path="/about" element = {<About/>}></Route>
         <Route path="/pricing" element = {<Pricing/>}></Route>

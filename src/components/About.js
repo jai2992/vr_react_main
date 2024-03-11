@@ -6,7 +6,7 @@ function About() {
   return (
     <Container>
       <NavMenu/>
-      <h1>About</h1>
+      {/* <h1>About</h1> */}
       {/* <img src="/images/abt1.png" alt=""></img> */}
       <center>
       <img src="/images/abt1.png" alt="abt1img" />
