@@ -1,46 +1,79 @@
-# Getting Started with Create React App and Redux
+# Mental Health Support Platform
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/2038bf11-b3f5-4f23-8dca-51be02270d7e)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Overview
 
-## Available Scripts
+This project aims to revolutionize mental health support by integrating cutting-edge technology with proven psychological techniques. The platform utilizes Retrieval Augmented Generation (RAG) technology to deliver personalized Virtual Reality (VR) experiences tailored to individual needs. 
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Self-care:** Provides tools for managing general stress and promoting overall well-being.
+- **Treatment companion:** Offers support for severe conditions such as phobias, trauma, and PTSD.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Voice analysis algorithms:** Robust algorithms for analyzing user's voice.
+- **RAG models:** Complex models for generating personalized VR experiences.
+- **Integration frameworks:** Seamless integration of various components.
+- **VR video editing software:** Tools for editing VR videos.
+- **User-friendly interfaces:** Interfaces designed for easy user interaction.
 
-### `npm test`
+## Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The platform is built on a flexible architecture that can adapt to evolving mental health concepts and accommodate a growing user base, ensuring scalability and sustainability. Cloud-based resources are leveraged to reduce infrastructure costs and improve scalability.
 
-### `npm run build`
+## Environmental Impact
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The solution provides measurable environmental advantages by reducing the carbon footprint associated with traditional therapy methods and promoting early intervention and self-care practices, thus alleviating strain on healthcare systems.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/d546d2c2-c0a8-4044-9993-4e77bcb8c17e)
+*landing page*
 
-### `npm run eject`
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/369d7305-54cb-46d0-b033-f066e43d5774)
+*sign in*
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/deb4098d-c725-4543-b1a5-f3163323539b)
+*sign up*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/cf7cd8a8-f496-4f95-908d-c68c63eb8f8f)
+*home*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/ae8b9351-a3eb-4115-9e92-670940358070)
+*phobia selection*
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/fddef8fb-a37b-4c3d-9391-4ea126366963)
+*phobis selection*
 
-## Learn More
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/26e0b30c-da81-4641-a343-f22720455c45)
+*phobia vr (progress)*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/fa3ec3a8-ebc3-454b-ac89-39808c7b4cec)
+*phobia vr (progress-25%)*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/ec0d258c-65cc-4533-bff7-a429b9b5cc43)
+*vr mode (waterfall-360)*
+
+![image](https://github.com/jai2992/vr_react_main/assets/136327019/6d7f5639-f929-46b0-ab4d-f531d497c617)
+*about*
+
+## Installation
+
+To run the project locally, clone the repository and run the following commands:
+
+```bash
+npm install
+npm start
+```
+##Contributors
+
+-Siva Nithish Kumar
+
+-Rajesh
+
+-Krishna Paresh Raichura
+
+-Sreejha
+
+-Jaiguru
