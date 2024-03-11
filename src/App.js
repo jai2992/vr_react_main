@@ -142,6 +142,7 @@ import './App.css';
 import {BrowserRouter as Router, Route ,Routes,Link} from 'react-router-dom';
 import Home from './components/Home';
 import Landing from './components/Landing';
+import Landingb from './components/Landingb';
 import Signin from './components/Signin';
 import Pricing from './components/Pricing';
 import About from './components/About';
@@ -155,8 +156,9 @@ function App() {
     <div className="App">
       <Router>
       <Routes>
-        <Route path="" element = {<Landing/>}></Route>
-        <Route path="/" element = {<Landing/>}></Route>
+        <Route path="" element = {<Landingb/>}></Route>
+        <Route path="/" element = {<Landingb/>}></Route>
+        <Route path="/a" element = {<Landing/>}></Route>
         <Route path="/home" element = {<Home/>}></Route>
         <Route path="/about" element = {<About/>}></Route>
         <Route path="/pricing" element = {<Pricing/>}></Route>
