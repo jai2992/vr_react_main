@@ -21,7 +21,7 @@ function Phobiavr() {
       const newProgress = progress < 100 ? progress + 25 : 0;
       setProgress(newProgress);
     };
-    const i="https://via.placeholder.com/500";
+    // const i="https://via.placeholder.com/500";
   return (
     <Container>
       <NavMenu/>
@@ -31,14 +31,16 @@ function Phobiavr() {
         <Progress color="#6ab04c" width={progress}>{progress}%</Progress>
       </ProgressBarContainer>
     </div>
+    <Link to={`https://kingof64sqrs.github.io/final-vr/`}>
     <button onClick={updateProgress}>
     <div className="container1">
-    <ProductBlock img={i} p="Stage 1"/>
-    <ProductBlock img={i} p="Stage 2"/>
-    <ProductBlock img={i} p="Stage 3"/>
-    <ProductBlock img={i} p="Stage 4"/>
+    <ProductBlock img="/images/stage1.png" p="Stage 1"/>
+    <ProductBlock img="/images/stage2.png" p="Stage 2"/>
+    <ProductBlock img="/images/stage3.png" p="Stage 3"/>
+    <ProductBlock img="/images/stage4.png" p="Stage 4"/>
     </div>
     </button>
+    </Link>
     </Container>
   )
 }
@@ -93,7 +95,8 @@ position:relative;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    color: white;
+    color: black;
+    background: rgba(0, 0,0,0,0.5);
     padding: 0px;
     text-align: center;
     transition: opacity 0.2s;
@@ -107,7 +110,8 @@ position:relative;
     opacity: 1;
   }
   .head{
-    font-size:18px;
+    font-size:22px;
+    font-weight:bold;
   }
   .para{
     font-size:12px;
@@ -119,13 +123,14 @@ position:relative;
 
 `;
 const ProgressBarContainer = styled.div`
-  width: 100%;
+  width: 70%;
+  margin-left:250px;
   background-color: #f0f0f0;
   border-radius: 4px;
 `;
 
 const Progress = styled.div`
-  height: 20px;
+  height: 30px;
   border-radius: 4px;
   background-color: ${props => props.color};
   width: ${props => props.width}%;
