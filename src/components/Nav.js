@@ -26,10 +26,7 @@ function Header() {
                 {/* <img src="/images/original-icon.svg" alt=""></img> */}
                 <Link to="https://kingof64sqrs.github.io/final-vr/" style={{ textDecoration: 'none', color: 'inherit' }}><span>DEMO VR</span></Link>
             </a>
-            <a>
-                {/* <img src="/images/movie-icon.svg" alt=""></img> */}
-                <Link to="/signin" style={{ textDecoration: 'none', color: 'inherit' }}><span>SIGNIN</span></Link>
-            </a>
+            
             
             
         </NavMenu>
