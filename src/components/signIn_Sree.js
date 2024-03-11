@@ -123,9 +123,7 @@ const SignupForm = () => {
               value={formData.confirmPassword}
               onChange={handleChange}
             />
-            <Link to={`/a`}>
             <input type="submit" value="Sign Up" />
-            </Link>
           </div>
         </form>
       </div>
