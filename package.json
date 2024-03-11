@@ -48,11 +48,6 @@
       "last 1 safari version"
     ]
     
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "postdeploy": "echo 'Deployed!'"
   }
   
 }
