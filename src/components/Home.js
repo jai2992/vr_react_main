@@ -6,7 +6,7 @@ function Home() {
   return (
     <Container>
       <NavMenu/>
-      <h1>Home</h1>
+      {/* <h1>Home</h1> */}
       <center>
         <img src="/images/home1.jpg" alt="homeimg" />
       </center>
