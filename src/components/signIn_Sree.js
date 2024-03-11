@@ -31,6 +31,7 @@ const SignupForm = () => {
   const handleSignInClick = (e) => {
     e.preventDefault();
     setSignUp(false);
+    
   };
 
   const handleSubmit = async (e) => {
