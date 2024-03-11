@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavMenu from './Nav'
+import NavMenu from './navb'
 import SignupForm from './signIn_Sree'
 
 function Signin() {
