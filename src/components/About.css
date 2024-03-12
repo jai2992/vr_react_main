@@ -1,0 +1,16 @@
+.text.left {
+    text-align: right; /* Change this line to set text alignment to left */
+    width: calc(50% - 20px);
+    padding: 0 20px;
+  
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  
+    b {
+      color: #203f29;
+      font-weight: bold;
+    }
+  }
