@@ -139,7 +139,7 @@ export default App;
 */
 
 import './App.css';
-import {BrowserRouter as Router, Route ,Routes,Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route ,Routes} from 'react-router-dom';
 import Home from './components/Home';
 import Landing from './components/Landing';
 import Landingb from './components/Landingb';

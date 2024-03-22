@@ -74,20 +74,20 @@ const Container = styled.main`
   }
 
 `;
-const ProgressBarContainer = styled.div`
-  width: 70%;
-  margin-left:250px;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-`;
+// const ProgressBarContainer = styled.div`
+//   width: 70%;
+//   margin-left:250px;
+//   background-color: #f0f0f0;
+//   border-radius: 4px;
+// `;
 
-const Progress = styled.div`
-  height: 30px;
-  border-radius: 4px;
-  background-color: ${props => props.color};
-  width: ${props => props.width}%;
-  transition: width 0.5s ease-in-out;
-`;
+// const Progress = styled.div`
+//   height: 30px;
+//   border-radius: 4px;
+//   background-color: ${props => props.color};
+//   width: ${props => props.width}%;
+//   transition: width 0.5s ease-in-out;
+// `;
 
 // ... (previous imports)
 

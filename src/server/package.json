@@ -4,7 +4,11 @@
   "description": "Back-end for signin and signup form for Mental Health using VR",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:backend1": "src/server/src/index.js",
+    "start:backend2": "src/components/quizbackend.js",
+    "start": "npm run start:backend1 & npm run start:backend2"
+
   },
   "keywords": [
     "mongoDB",
