@@ -1,4 +1,9 @@
 {
+  "homepage": "https://jai2992.github.io/vr_react_main/",
+
+"predeploy": "npm run build",
+
+"deploy": "gh-pages -d build",
   "name": "back-end",
   "version": "1.0.0",
   "description": "Back-end for signin and signup form for Mental Health using VR",

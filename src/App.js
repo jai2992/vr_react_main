@@ -154,7 +154,7 @@ import Phobiavr from './components/phobia-vr';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/vr_react_main">
       <Routes>
         <Route path="" element = {<Landingb/>}></Route>
         <Route path="/" element = {<Landingb/>}></Route>
