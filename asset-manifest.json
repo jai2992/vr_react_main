@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/vr_react_main/static/css/main.5cd17e1d.css",
+    "main.js": "/vr_react_main/static/js/main.674e3416.js",
+    "static/js/453.5e560239.chunk.js": "/vr_react_main/static/js/453.5e560239.chunk.js",
+    "static/media/FiraMono-Medium.ttf": "/vr_react_main/static/media/FiraMono-Medium.1f590c63ad85427d3c70.ttf",
+    "static/media/Alatsi-Regular.ttf": "/vr_react_main/static/media/Alatsi-Regular.82adaa9f4ebf5cb521f3.ttf",
+    "index.html": "/vr_react_main/index.html",
+    "main.5cd17e1d.css.map": "/vr_react_main/static/css/main.5cd17e1d.css.map",
+    "main.674e3416.js.map": "/vr_react_main/static/js/main.674e3416.js.map",
+    "453.5e560239.chunk.js.map": "/vr_react_main/static/js/453.5e560239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cd17e1d.css",
+    "static/js/main.674e3416.js"
+  ]
+}
