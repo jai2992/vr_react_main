@@ -1,20 +1,16 @@
 {
   "homepage": "https://jai2992.github.io/vr_react_main/",
 
-"predeploy": "npm run build",
-
-"deploy": "gh-pages -d build",
   "name": "back-end",
   "version": "1.0.0",
   "description": "Back-end for signin and signup form for Mental Health using VR",
   "main": "index.js",
   "scripts": {
     
-  "deploy": "gh-pages -d build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:backend1": "src/server/src/index.js",
-    "start:backend2": "src/components/quizbackend.js",
-    "start": "npm run start:backend1 & npm run start:backend2"
+"predeploy": "npm run build",
+
+"deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
 
   },
   "keywords": [
